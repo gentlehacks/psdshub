@@ -172,10 +172,11 @@ const HomePage = () => {
           drag='x'
           dragConstraints={{right: 10, left: 0}}
         >
-          <div className="w-15 h-15 bg-gray-800 text-white rounded-full border-2 border-yellow-500 flex items-center justify-center">
+          <div 
+            onClick={() => setAppTheme()}
+          className="w-15 h-15 bg-gray-800 text-white rounded-full border-2 border-yellow-500 flex items-center justify-center">
             {appTheme ? (
               <motion.div
-                onClick={() => setAppTheme()}
                 initial={{scale: 0.9}}
                 animate={{scale: [0.9, 1.1, 1]}}
                 transition={{duration: 0.2}}
@@ -185,7 +186,6 @@ const HomePage = () => {
               </motion.div>
             ) : (
               <motion.div
-                  onClick={() => setAppTheme()}
                 initial={{scale: 0.9}}
                 animate={{scale: [0.9, 1.1, 1]}}
                 transition={{duration: 0.2}}
