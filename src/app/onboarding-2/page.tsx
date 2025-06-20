@@ -10,7 +10,7 @@ const Onboarding2 = () => {
   const route = useRouter();
 
   return (
-    <div className={`w-full h-full p-4 flex flex-col items-center justify-center
+    <div className={`w-full h-screen p-4 flex flex-col items-center justify-center
       ${appTheme ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}
     `}>
       <div className="w-[100%] mb-[3rem] overflow-hidden flex items-center justify-center">
