@@ -72,8 +72,8 @@ const HomePage = () => {
   };
 
   return (
-    <div className="w-full h-full bg-black">
-      <div className={`relative w-full h-screen sm:p-12 mx-auto p-4 transition-all duration-300
+    <div className="w-full h-screen bg-black">
+      <div className={`relative w-full h-full sm:p-12 mx-auto p-4 transition-all duration-300
         ${appTheme ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}
       `}>
         <h1 className={`text-3xl font-semibold text-center my-[2rem] rounded-lg px-6 py-3
