@@ -39,7 +39,11 @@ const Home = () => {
       </button>
       <button 
         onClick={() => route.push("/home")}
-      className="w-[90%] max-w-[25rem] px-6 py-2 text-lg rounded-lg text-white bg-gray-800 hover:bg-gray-700 transition-bg duration-200 cursor-pointer">
+      className={`w-[90%] max-w-[25rem] px-6 py-2 text-lg rounded-lg text-white  transition-bg duration-200 cursor-pointer
+         ${appTheme 
+          ? 'bg-gray-800 hover:bg-gray-700' 
+          : 'bg-gray-400 hover:bg-gray-500'}
+      `}>
         Skip
       </button>
     </div>
