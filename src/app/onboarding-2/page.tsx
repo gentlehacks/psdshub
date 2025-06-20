@@ -32,7 +32,7 @@ const Onboarding2 = () => {
       <motion.button 
         onClick={() => route.push("/home")}
         whileTap={{scale: [1.1, 1]}}
-      className="w-[90%] max-w-[25rem] px-6 py-2 text-lg rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-bg duration-200 cursor-pointer mb-3">
+      className="w-[90%] max-w-[25rem] px-6 py-2 text-lg rounded-lg text-white  transition-bg duration-200 cursor-pointer mb-3">
         Get Started
       </motion.button>
       <motion.button 
