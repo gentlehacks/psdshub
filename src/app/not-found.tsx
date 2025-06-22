@@ -1,4 +1,5 @@
 "use client"
+import {motion} from "framer-motion";
 import {useRouter} from "next/navigation"
 import {FaArrowLeft} from "react-icons/fa"
 
@@ -15,13 +16,14 @@ const Notfound = () => {
         </span>
       </h1>
 
-      <button 
+      <motion.button 
         onClick={() => route.back()} 
-        className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg mt-[2.5rem] flex items-center justify-center"
+        whileTap={{scale: [1.1, 1]}}
+      className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg mt-[2.5rem] flex items-center justify-center"
        >
          <FaArrowLeft className="mr-3" />
          Back home
-      </button>
+      </motion.button>
     </div>
   )
 }

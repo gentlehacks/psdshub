@@ -37,6 +37,7 @@ const Onboarding2 = () => {
       </motion.button>
       <motion.button 
         onClick={() => route.back()}
+        whileTap={{scale: [1.1, 1]}}
       className={`w-[90%] max-w-[25rem] px-6 py-2 text-lg rounded-lg text-white transition-bg duration-200 cursor-pointer mb-3
         ${appTheme 
           ? 'bg-gray-800 hover:bg-gray-700' 

@@ -149,9 +149,13 @@ const HomePage = () => {
 
 
         {/* Generate Password Button */}
-        <button 
+        <motion.button 
           disabled={generating}
           onClick={handleGeneratePassword} 
+          whileTap={{scale: generating 
+            ? 1 
+            : [1.1, 1]
+          }}
         className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-lg transition-all duration 200 w-full cursor-pointer mt-[2rem] mb-[1rem]">
           {generating ? (
             <motion.div className="flex items-center justify-center">
@@ -166,7 +170,7 @@ const HomePage = () => {
           ) : (
             <p>Generate</p>
           )}
-        </button>
+        </motion.button>
 
         <motion.div className="absolute top-10 right-10"
           drag='x'
