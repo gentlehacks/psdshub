@@ -154,7 +154,7 @@ const HomePage = () => {
           onClick={handleGeneratePassword} 
           whileTap={{scale: generating 
             ? 1 
-            : [1.1, 1]
+            : [0.9, 1.1, 1]
           }}
         className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-lg transition-all duration 200 w-full cursor-pointer mt-[2rem] mb-[1rem]">
           {generating ? (
